@@ -1,3 +1,4 @@
+import Feed from "@components/Feed";
 
 
 const Home = () => {
@@ -9,7 +10,7 @@ const Home = () => {
         </h1>
         <p className="desc text-center">This app is deployed on Vercel and is using the </p>
 
-        {/* Feed */}
+        <Feed />
     </section>
   )
 }
