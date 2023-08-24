@@ -30,12 +30,12 @@ const Nav = () => {
             <Link href="/profile">
               <Image 
                 // Add google image here
-                src="/assets/image/logo.svg"> 
+                src="/assets/image/logo.svg" 
                 width={37}
                 height={37}
                 className="rounded-full"
-                alt="Profile"
-              </Image>
+                alt="Profile" 
+              />
             </Link>
           </div>
         ) : (
