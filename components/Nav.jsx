@@ -3,7 +3,7 @@
 import Link from 'next/link' ;
 import Image from 'next/image' ;
 import { useState, useEffect } from 'react';
-import {signIn, signOut, useSession, getproviders} from 'next-auth/react'
+import {signIn, signOut, useSession, getProviders} from 'next-auth/react'
 
 const Nav = () => {
   const isUserLoggedIn = true;
@@ -12,7 +12,7 @@ const Nav = () => {
 
   useEffect(() => {
     const setproviders = async () => {
-      const response = await getproviders();
+      const response = await getProviders();
       setproviders(response);
     }
     setproviders();
