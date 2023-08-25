@@ -4,7 +4,20 @@ let isConnected = false; // global variable to cache the connection
 
 export const connectToDB = async () => {
     mongoose.set('strictQuery', true);
-    is (isConnected) {
 
+    is (isConnected) {
+        console.log('MongoDB is already connected');
+        return;
+    }
+    try {
+        await mongoose.connect(process.env.MONGODB_URI, {
+            dbName: "GitHubRepos",
+            useNewUrlParser: true,
+            useUnifiedTopology: true,
+        })
+        isConnected = true;
+        console.log("MongoDB connected");
+    } catch (error) {
+        console.log(error);
     }
 }
