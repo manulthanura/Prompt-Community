@@ -10,11 +10,11 @@ const handler = NextAuth({
             // clientSecret: process.env.GOOGLE_CLIENT_SECRET,
         }),
     ],
-    async session({ session}) {
+    async session({ session }) {
         // session.user.id = user.id;
         // return session;
     },
-    async signIn({profile}){
+    async signIn({ profile }){
 
     }
 })
