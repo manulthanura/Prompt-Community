@@ -3,17 +3,19 @@
 import Link from 'next/link' ;
 import Image from 'next/image' ;
 import { useState, useEffect } from 'react';
-import {signIn, signOut, useSession, getProviders} from 'next-auth/react'
+import {signIn, signOut, useSession, getproviders} from 'next-auth/react'
 
 const Nav = () => {
   const isUserLoggedIn = true;
-  const [Provider, setProvider] = useState(null);
+  const [providers, setproviders] = useState(null);
+  const [toggleDropdown, settoggleDropdown] = useState(false);
+
   useEffect(() => {
-    const setProvider = async () => {
-      const response = await getProviders();
-      setProvider(response);
+    const setproviders = async () => {
+      const response = await getproviders();
+      setproviders(response);
     }
-    setProvider();
+    setproviders();
   }, [])
 
   return (
@@ -49,7 +51,7 @@ const Nav = () => {
           </div>
         ) : (
           <>
-          {Provider && Object.values(Providers).map((provider) => (
+          {Provider && Object.values(providers).map((provider) => (
             <button
               type="button"
               key={provider.name}
@@ -74,12 +76,12 @@ const Nav = () => {
             height={37}
             className="rounded-full"
             alt="Profile" 
-            onClick={() => {}}
+            onClick={() => settoggleDropdown ((prev) => !prev)}
             />
           </div>
         ):(
         <>
-          {Provider && Object.values(Providers).map((provider) => (
+          {providers && Object.values(providers).map((provider) => (
             <button
               type="button"
               key={provider.name}
