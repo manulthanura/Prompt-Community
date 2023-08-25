@@ -3,16 +3,16 @@
 import Link from 'next/link' ;
 import Image from 'next/image' ;
 import { useState, useEffect } from 'react';
-import {signIn, signOut, useSession, getproviders} from 'next-auth/react'
+import {signIn, signOut, useSession, getProviders} from 'next-auth/react'
 
 const Nav = () => {
   const isUserLoggedIn = true;
   const [providers, setproviders] = useState(null);
-  const [toggleDropdown, settoggleDropdown] = useState(false);
+  const [toggleDropdown, setToggleDropdown] = useState(false);
 
   useEffect(() => {
     const setproviders = async () => {
-      const response = await getproviders();
+      const response = await getProviders();
       setproviders(response);
     }
     setproviders();
@@ -76,8 +76,35 @@ const Nav = () => {
             height={37}
             className="rounded-full"
             alt="Profile" 
-            onClick={() => settoggleDropdown ((prev) => !prev)}
+            onClick={() => setToggleDropdown ((prev) => !prev)}
             />
+            {toggleDropdown && (
+              <div className="dropdown">
+                <Link 
+                  href="/profile" 
+                  className="dropdown_link"
+                  onClick={() => setToggleDropdown(false)}
+                >
+                  My Profile
+                </Link>
+                <Link 
+                  href="/create-prompt" 
+                  className="dropdown_link"
+                  onClick={() => setToggleDropdown(false)}
+                >
+                  Create Promt
+                </Link>
+                <button
+                  type="button"
+                  onClick={() => {
+                    setToggleDropdown(false);
+                    signOut();
+                  }}
+                  className="mt-5 w-full black_btn">
+                  Sign Out
+                </button>
+              </div>
+            )}
           </div>
         ):(
         <>
