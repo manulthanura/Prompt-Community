@@ -4,10 +4,8 @@ import GoogleProvider from 'next-auth/providers/google';
 const handler = NextAuth({
     providers: [
         GoogleProvider({
-            clientId: '',
-            clientSecret: '',
-            // clientId: process.env.GOOGLE_CLIENT_ID,
-            // clientSecret: process.env.GOOGLE_CLIENT_SECRET,
+            clientId: process.env.GOOGLE_ID,
+            clientSecret: process.env.GOOGLE_CLIENT_SECRET,
         }),
     ],
     async session({ session }) {
@@ -15,6 +13,12 @@ const handler = NextAuth({
         // return session;
     },
     async signIn({ profile }){
+        try{
+            // server side validation
+        } catch (error) {
+            // console.log(error);
+            // return false;
+        }
 
     }
 })
