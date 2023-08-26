@@ -29,9 +29,9 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 
 ## Implementations
 
-[] Implement Search
+- Implement Search
     - Search by prompt content
     - Search by tag
     - Search by username
-[] Implement Click on tag
-[] Implement View other profiles
+- Implement Click on tag
+- Implement View other profiles
