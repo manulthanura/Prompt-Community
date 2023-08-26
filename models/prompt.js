@@ -7,6 +7,14 @@ const PromptSchema = new Schema({
     },
     prompt: {
         type: String,
-        required: true,
+        required: [true, "Please provide a prompt."],
     },
-})
+    tag: {
+        type: String,
+        required: [true, "Please provide a tag."],
+    }
+});
+
+const Prompt = models.Prompt || model("Prompt", PromptSchema);
+
+export default Prompt;
