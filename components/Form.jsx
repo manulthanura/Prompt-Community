@@ -14,11 +14,24 @@ const Form = ({ type, post, setPost, submitting, handleSubmit}) => {
         <label>
           <span className="font-satoshi font-semibold text-base text-gray-700">Your Prompt</span>
           <textarea 
-          value={post.prompt}
-          onChange={(e) => setPost({...post, prompt: e.target.value})}
-          placeholder="What is your prompt?"
-          required
-          className="form_textarea"
+            value={post.prompt}
+            onChange={(e) => setPost({...post, prompt: e.target.value})}
+            placeholder="What is your prompt?"
+            required
+            className="form_textarea"
+          />
+        </label>
+        <label>
+          <span className="font-satoshi font-semibold text-base text-gray-700">
+            Prompt Tag
+            <span className="font-normal">(#product #web)</span>
+          </span>
+          <textarea 
+            value={post.prompt}
+            onChange={(e) => setPost({...post, prompt: e.target.value})}
+            placeholder="What is your prompt?"
+            required
+            className="form_textarea"
           />
         </label>
       </form>
