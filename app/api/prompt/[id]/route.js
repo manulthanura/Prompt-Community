@@ -15,6 +15,7 @@ export const GET = async (request, { params }) => {
     }
 }
 
+// UPDATE
 export const PATCH = async (request, { params }) => {
     const { prompt, tag } = await request.json();
 
@@ -40,6 +41,7 @@ export const PATCH = async (request, { params }) => {
     }
 };
 
+// DELETE 
 export const DELETE = async (request, { params }) => {
     try {
         await connectToDB();
