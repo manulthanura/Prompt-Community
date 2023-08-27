@@ -22,6 +22,7 @@ const CreatePrompt = () => {
           prompt: post.prompt,
           userId: session?.user.id,
           tag: post.tag,
+          createdAt: new Date().toISOString(),
         }),
       });
 
