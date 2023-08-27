@@ -46,7 +46,7 @@ const PromptCard = ({ post, handleEdit, handleDelete, handleTagClick }) => {
               {post.creator.username}
             </h3>
             <p className='font-inter text-sm text-gray-500'>
-              {post.creator.email}
+              {new Date(post.createdAt).toLocaleDateString()}
             </p>
           </div>
         </div>
