@@ -5,7 +5,7 @@ import Footer from "@components/Footer";
 const Home = () => {
   return (
     <section>
-    <main class="flex flex-1 w-full flex-col items-center justify-center text-center px-4 sm:mt-28 mt-20">
+    <div class="flex flex-1 w-full flex-col items-center justify-center text-center px-4 sm:mt-28 mt-20">
       <h1
           class="border rounded-2xl py-1 px-4 text-slate-500 text-sm mb-5 hover:scale-105 transition duration-300 ease-in-out">Welcome to the AI Prompt Ideas Community!</h1>
       <h1 class="mx-auto max-w-4xl font-display text-5xl font-bold tracking-normal text-slate-900 sm:text-7xl">Share your  
@@ -17,7 +17,7 @@ const Home = () => {
       <p class="mx-auto mt-12 max-w-xl text-lg text-slate-700 leading-7">If you're interested in learning more about AI prompt ideas, or if you're just looking for a place to share your own ideas, then the AI Prompt Ideas Community is the perfect place for you.</p>
       {/* <a class="bg-black rounded-xl text-white font-medium px-4 py-3 sm:mt-10 mt-8 hover:bg-black/80" href="/create-prompt">Create prompt →
       </a> */}
-  </main>
+  </div>
   <Feed />
   <Footer />
   </section>
