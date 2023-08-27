@@ -21,8 +21,8 @@ const Rootlayout = ({children}) => {
               <main className="app">
                 <Nav />
                 {children}
+                <Footer />
               </main>
-              <Footer />
             </Provider>
         </body>
     </html>
