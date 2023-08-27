@@ -1,4 +1,5 @@
 import Feed from "@components/Feed";
+import Footer from "@components/Footer";
 
 
 const Home = () => {
@@ -18,6 +19,7 @@ const Home = () => {
       </a> */}
   </main>
   <Feed />
+  <Footer />
   </section>
   
     // <section className="w-full flex-center flex-col">
