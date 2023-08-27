@@ -21,7 +21,6 @@ const Home = () => {
       </a> */}
   </div>
   <Feed />
-  <Footer />
   </section>
   
     // <section className="w-full flex-center flex-col">
