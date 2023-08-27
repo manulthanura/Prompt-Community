@@ -5,7 +5,8 @@ import Footer from "@components/Footer";
 const Home = () => {
   return (
     <section>
-    <div class="flex flex-1 w-full flex-col items-center justify-center text-center px-4 sm:mt-28 mt-20">
+    {/* <div class="flex flex-1 w-full flex-col items-center justify-center text-center px-4 sm:mt-28 mt-20"> */}
+    <div class="flex flex-1 w-full flex-col items-center justify-center text-center sm:mt-28 mt-20">
       <h1
           class="border rounded-2xl py-1 px-4 text-slate-500 text-sm mb-5 hover:scale-105 transition duration-300 ease-in-out">Welcome to the AI Prompt Ideas Community!</h1>
       <h1 class="mx-auto max-w-4xl font-display text-5xl font-bold tracking-normal text-slate-900 sm:text-7xl">Share your  
