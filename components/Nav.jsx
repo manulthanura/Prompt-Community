@@ -28,7 +28,7 @@ const Nav = () => {
           height={30}
           className="object-contain"
         />
-        <p className="logo_text">GitHub Promt</p>
+        <p className="logo_text">PromptCom</p>
       </Link>
       {/* Desktop Navigation */}
       <div className="sm:flex hidden">
