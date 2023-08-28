@@ -45,7 +45,7 @@ const Form = ({ type, post, setPost, submitting, handleSubmit}) => {
           >
             {submitting ? `${type}...` : type}
           </button>
-          <input type="hidden" name="createdAt" value={new Date()} />
+          <input type="hidden" value={post.createdAt} onChange={(e) => setPost({...post, createdAt: e.target.value})}/>
         </div>
       </form>
     </section>
