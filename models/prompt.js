@@ -13,10 +13,6 @@ const PromptSchema = new Schema({
         type: String,
         required: [true, "Please provide a tag."],
     },
-    createdAt: {
-        type: String,
-        default: Date.now,
-    },
 });
 
 const Prompt = models.Prompt || model("Prompt", PromptSchema);
