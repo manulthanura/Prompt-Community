@@ -5,7 +5,7 @@ import Provider from '@components/Provider';
 import Footer from '@components/Footer';
 
 export const metadata = {
-    title: 'Prompt Hub',
+    title: 'Prompt Community',
     description: 'Community of AI Prompt Ideas',
   }
 
