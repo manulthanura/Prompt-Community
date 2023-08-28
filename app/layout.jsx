@@ -5,26 +5,29 @@ import Provider from '@components/Provider';
 import Footer from '@components/Footer';
 
 export const metadata = {
-    title: 'PromptCOM',
+    title: 'Prompt Hub',
     description: 'Community of AI Prompt Ideas',
   }
 
 const Rootlayout = ({children}) => {
   return (
     <html lang="en">
-        <body>
-            <Provider>
-              <div className="main">
-                  <div className="gradient" />
-              </div>
+      <head>
+        <link rel="icon" type="image/svg" href="/assets/images/logo.svg" />
+      </head>
+      <body className="no-scrollbar overflow-y-auto">
+          <Provider>
+            <div className="main">
+                <div className="gradient" />
+            </div>
 
-              <main className="app">
-                <Nav />
-                {children}
-                <Footer />
-              </main>
-            </Provider>
-        </body>
+            <main className="app">
+              <Nav />
+              {children}
+              <Footer />
+            </main>
+          </Provider>
+      </body>
     </html>
   )
 }

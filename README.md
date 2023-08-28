@@ -1,4 +1,4 @@
-# Welcome to the AI Prompt Ideas Community!
+# Welcome to the Prompt Hub - AI Prompt Ideas Community!
 
 
 ![AI Prompt Ideas Community](/public/assets/md/home.png)
