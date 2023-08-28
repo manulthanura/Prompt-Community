@@ -26,7 +26,9 @@ const Form = ({ type, post, setPost, submitting, handleSubmit}) => {
               <label>
                 <span className="font-satoshi font-semibold text-base text-gray-700">
                   Tag {``}
-                  <span className="font-normal">(#product #web)</span>
+                  <span class="mx-1 text-xs font-text inline-block py-1 px-2 uppercase rounded-full text-emerald-600 bg-emerald-200 uppercase last:mr-0 mr-1">
+                    prompt
+                  </span>
                 </span>
                 <input
                   value={post.tag}
@@ -51,7 +53,7 @@ const Form = ({ type, post, setPost, submitting, handleSubmit}) => {
             </form> 
           </div>
           <div class="grid grid-cols-1 gap-4 mt-8">
-              <img class="w-full rounded-lg" src="/assets/images/cp.jpg" alt="office content 1"/>
+              <img class="w-full rounded-lg shadow-lg shadow-emerald-100" src="/assets/images/cp.jpg" alt="office content 1"/>
           </div>
       </div>
     </section>
