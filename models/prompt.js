@@ -14,7 +14,7 @@ const PromptSchema = new Schema({
         required: [true, "Please provide a tag."],
     },
     createdAt: {
-        type: Date,
+        type: String,
         default: Date.now,
     },
 });
