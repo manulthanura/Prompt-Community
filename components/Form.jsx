@@ -4,7 +4,7 @@ const Form = ({ type, post, setPost, submitting, handleSubmit}) => {
   return (
     <section className="w-full max-w-full flex-start flex-col">
       <h1 className="head_text text-left">
-        <span className="blue_gradient">{type} Post</span>
+        <span className="green_gradient">{type} Post</span>
       </h1>
       <p className="desc text-left max-w-md">
         {type} a post to the community. Please be kind and respectful.
@@ -34,14 +34,14 @@ const Form = ({ type, post, setPost, submitting, handleSubmit}) => {
             className="form_input"
           />
         </label>
-        <div className="flex-end mx-3 mb-5 gap-4">
-          <Link href="/" className="text-gray-900 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-200 font-medium rounded-full text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700">
+        <div className="flex-end mx-3 mb-5 gap-4 align-content: center">
+          <Link href="/" className="text-black-400">
             Cancel
           </Link>
           <button
             type="submit"
             disabled={submitting}
-            className="text-white bg-blue-700 hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-sm px-5 py-2.5 text-center mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+            className="bg-emerald-500 text-white active:bg-emerald-600 font-bold uppercase text-sm px-6 py-3 rounded-full shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
           >
             {submitting ? `${type}...` : type}
           </button>
