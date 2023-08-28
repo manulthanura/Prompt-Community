@@ -9,7 +9,7 @@ const CreatePrompt = () => {
   const router = useRouter();
   const { data: session } = useSession();
   const [submitting, setIsSubmitting] = useState(false);
-  const [post, setPost] = useState({ prompt: "", tag: "" });
+  const [post, setPost] = useState({ prompt: "", tag: "", createdAt: "" });
 
   const createPrompt = async (e) => {
     e.preventDefault();
@@ -22,7 +22,7 @@ const CreatePrompt = () => {
           prompt: post.prompt,
           userId: session?.user.id,
           tag: post.tag,
-          createdAt: new Date().toISOString(),
+          createdAt: new Date(),
         }),
       });
 
