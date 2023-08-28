@@ -21,7 +21,7 @@ const Rootlayout = ({children}) => {
                 <div className="gradient" />
             </div>
 
-            <main className="app no-scrollbar">
+            <main className="app">
               <Nav />
               {children}
               <Footer />
