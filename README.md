@@ -2,6 +2,9 @@
 
 ## Welcome to the AI Prompt Ideas Community!
 
+
+![AI Prompt Ideas Community](/public/assets/md/home.png)
+
 The AI Prompt Ideas Community is a place for anyone who is interested in learning more about AI prompt ideas, or who wants to share their own ideas. Whether you are a beginner or an experienced prompt engineer, you will find a wealth of resources and support in this community.
 
 - Learn from other members who have been using AI prompts for years.
@@ -9,6 +12,8 @@ The AI Prompt Ideas Community is a place for anyone who is interested in learnin
 - Find inspiration for new projects.
 - Collaborate with other members on creative projects.
 - Stay up-to-date on the latest developments in AI prompt engineering.
+
+![AI Prompt Ideas Community](/public/assets/md/cp.png)
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
