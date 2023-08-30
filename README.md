@@ -22,9 +22,8 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 ### Getting Started
 
 Clone the repository
-`git clone https://github.com/manulthanura/Prompt-Community.git`
-How to run the project in your local machine
 
+`git clone https://github.com/manulthanura/Prompt-Community.git`
 
 First, run the development server:
 
