@@ -15,9 +15,9 @@ The AI Prompt Ideas Community is a place for anyone who is interested in learnin
 
 ![AI Prompt Ideas Community](/public/assets/md/cp.png)
 
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
-
 ## Implementations
+
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ### Getting Started
 
