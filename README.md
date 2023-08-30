@@ -15,11 +15,16 @@ The AI Prompt Ideas Community is a place for anyone who is interested in learnin
 
 ![AI Prompt Ideas Community](/public/assets/md/cp.png)
 
-## Implementations
+## Building locally
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ### Getting Started
+
+Clone the repository
+`git clone https://github.com/manulthanura/Prompt-Community.git`
+How to run the project in your local machine
+
 
 First, run the development server:
 
