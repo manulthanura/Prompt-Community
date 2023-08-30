@@ -2,6 +2,8 @@
 
 # Welcome to the Prompt Hub - AI Prompt Ideas Community!
 
+![Static Badge](https://img.shields.io/badge/Repo-Prompt_Community-orange) ![GitHub](https://img.shields.io/github/license/manulthanura/Data-structure-using-C) ![GitHub Repo stars](https://img.shields.io/github/stars/manulthanura/Data-structure-using-C?color=yellow) ![GitHub top language](https://img.shields.io/github/languages/top/manulthanura/Data-structure-using-C) ![GitHub last commit](https://img.shields.io/github/last-commit/manulthanura/Data-structure-using-C)
+
 The AI Prompt Ideas Community is a place for anyone who is interested in learning more about AI prompt ideas, or who wants to share their own ideas. Whether you are a beginner or an experienced prompt engineer, you will find a wealth of resources and support in this community.
 
 - Learn from other members who have been using AI prompts for years.
