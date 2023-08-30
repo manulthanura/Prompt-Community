@@ -1,7 +1,6 @@
-# Welcome to the Prompt Hub - AI Prompt Ideas Community!
-
-
 ![AI Prompt Ideas Community](/public/assets/md/home.png)
+
+# Welcome to the Prompt Hub - AI Prompt Ideas Community!
 
 The AI Prompt Ideas Community is a place for anyone who is interested in learning more about AI prompt ideas, or who wants to share their own ideas. Whether you are a beginner or an experienced prompt engineer, you will find a wealth of resources and support in this community.
 
